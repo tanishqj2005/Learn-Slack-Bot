@@ -6,7 +6,7 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==1.9.6"
+django = "==1.11.17"
 slackclient = "==1.0.0"
 requests = "==2.11.0"
 websocket-client = "==0.37.0"

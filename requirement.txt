@@ -1,4 +1,4 @@
-Django==1.9.6
+Django==1.11.17
 slackclient==1.0.0
 requests==2.11.0
 six==1.10.0
