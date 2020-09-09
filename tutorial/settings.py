@@ -49,6 +49,9 @@ MIDDLEWARE_CLASSES = [
     'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
 ]
 
 ROOT_URLCONF = 'tutorial.urls'
@@ -121,5 +124,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-SLACK_CLIENT_ID = "YOUR CLIENT ID"
-SLACK_CLIENT_SECRET = "YOUR CLIENT SECRET"
+SLACK_CLIENT_ID = "1359501353504.1375107396672"
+SLACK_CLIENT_SECRET = "0f4bdd45c8dc01e4f8732ccbc72e59a7"
