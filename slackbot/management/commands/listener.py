@@ -13,8 +13,10 @@ class Command(BaseCommand):
         if client.rtm_connect():
             while True:
                 events = client.rtm_read()
-                print("%s----%s" % (team, events))
+                # print("%s----%s" % (team, events))
                 for event in events:
                     if 'type' in event and event['type'] == 'message' and event['text'] == 'hi':
                         client.rtm_send_message(event['channel'], "hello world")
+                    if 'type' in event and event['type'] == 'message' and 'How are you'.lower() in event['text'].lower():
+                        client.rtm_send_message(event['channel'], "I am fine, Thanks!")
                 time.sleep(1)
